@@ -1,0 +1,66 @@
+{
+	"name": "bs5snippets",
+	"displayName": "bs5snippets",
+	"description": "snippest for bootstrap 5 ",
+	"publisher": "Deep",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url":"https://github.com/Deep1144/bs5snippest"
+	},
+	"icon": "./icon.jpg",
+	"activationEvents": [
+		"onCommand:bs5snippets.helloWorld"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "bs5snippets.helloWorld",
+				"title": "Hello World"
+			}
+		],
+
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippests/snippests.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippests/snippests.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippests/snippests.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippests/snippests.json"
+			}
+
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}
