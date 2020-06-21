@@ -2,6 +2,8 @@
 
 This is the README for your extension "bs5snippets". After writing up a brief description, we recommend including the following sections.
 
+[![Install extension button](https://res.cloudinary.com/saurabhdaware/image/upload/v1564401766/saurabhdaware.in/otherAssets/iebutton.png)](https://marketplace.visualstudio.com/items?itemName=Deep.bs5snippets)
+
 ## Features
 
 > <b>!bs5</b> -> used to generate bootstrap5 boilerplate
